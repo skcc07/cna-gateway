@@ -4,19 +4,19 @@ data:
     - groups:
       - system:bootstrappers
       - system:nodes
-      rolearn: arn:aws:iam::052937454741:role/eksctl-TeamE-nodegroup-standard-w-NodeInstanceRole-GXDWDGLPWR40
+      rolearn: arn:aws:iam::496278789073:role/eksctl-TeamESeven-nodegroup-stand-NodeInstanceRole-2SP8ULJ4KBGK
       username: system:node:{{EC2PrivateDNSName}}
-    - rolearn: arn:aws:iam::052937454741:role/CodeBuildServiceRoleForTeamE
-      username: CodeBuildServiceRoleForTeamE
+    - rolearn: arn:aws:iam::496278789073:role/CodeBuildForSkcc07
+      username: CodeBuildForSkcc07
       groups:
-        - system:masters
+      - system:masters
   mapUsers: |
     []
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-08-31T09:06:31Z"
+  creationTimestamp: "2020-09-02T05:35:36Z"
   name: aws-auth
   namespace: kube-system
-  resourceVersion: "854"
+  resourceVersion: "849"
   selfLink: /api/v1/namespaces/kube-system/configmaps/aws-auth
-  uid: cf038f09-ab94-4b60-9937-33acc0be86d8
+  uid: d39ff51b-4ceb-44b9-8d2a-179b5a91d9da
